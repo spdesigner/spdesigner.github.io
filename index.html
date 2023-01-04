@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0066)https://www.w3schools.com/howto/tryw3css_templates_portfolio2.htm# -->
 <html lang="en">
 
 <head>
@@ -7,8 +6,8 @@
   <title>Sylvain POURQUIER - Portfolio</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./template_files/w3.css">
-  <link rel="stylesheet" href="./template_files/css">
+  <link rel="stylesheet" href="./assets/w3.css">
+  <link rel="stylesheet" href="./assets/css.css">
   <style>
     body,
     h1,
@@ -673,18 +672,6 @@
       function w3_close() {
         document.getElementById("mySidebar").style.display = "none";
         document.getElementById("myOverlay").style.display = "none";
-      }
-
-      // Modal Image Gallery
-      function onClick(element) {
-        let filename = element.src.split(".");
-        let path = filename[0];
-        let extension = filename[1];
-
-        document.getElementById("img01").src = path + "-xl." + extension;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
       }
 
     </script>
