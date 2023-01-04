@@ -27,6 +27,11 @@
     .w3-third img:hover {
       opacity: 1
     }
+
+    .active {
+      color: #70B5FA !important;
+      background-color: #303B48!important;      
+    }
   </style>
   <link type="text/css" rel="stylesheet" href="./assets/simple-lightbox.css" />
 </head>
@@ -37,8 +42,8 @@
   <nav class="w3-sidebar w3-bar-block w3-white w3-text-grey w3-collapse w3-top w3-center"
     style="z-index: 3; width: 300px; font-weight: bold; display: none;" id="mySidebar"><br>
     <h3 class="w3-padding-32 w3-center"><b>sylvain<br>pourquier</b><br /><small>product designer</small></h3>
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">portfolio</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">à propos</a>
+    <a href="#" id="portfolioMenu" onclick="w3_close()" class="w3-bar-item w3-button portfolio active">portfolio</a>
+    <a href="#about" id="aboutMenu" onclick="w3_close()" class="w3-bar-item w3-button about">à propos</a>
 
     <a href="./assets/CV-Sylvain-POURQUIER.pdf" target="_blank" class="w3-bar-item w3-button" title="CV">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
@@ -85,7 +90,7 @@
   <!-- !PAGE CONTENT! -->
   <div class="w3-main" style="margin-left:300px">
 
-    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="portfolio">
+    <section class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="portfolio">
       <h2><b>portfolio</b></h2>
       <p class="w3-wide">#nodejs/vector-tile/mapbox<br /><i>Dev & Design</i></p>
       <div class="w3-content w3-justify" style="max-width:600px">
@@ -113,14 +118,13 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Push down content on small screens -->
-    <div class=" w3-hide-large" style="margin-top:83px">
-    </div>
-    <hr class="w3-opacity">
+    <div class=" w3-hide-large" style="margin-top:83px"></div>
+    <hr class="w3-opacity" />
 
-    <div class=" w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32">
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32">
       <div class="w3-content w3-justify" style="max-width:600px">
         <p>
         <h4>Simulations de l'éclairage public</h4>
@@ -130,31 +134,48 @@
         <!-- Push down content on small screens -->
         <div class="w3-hide-large" style="margin-top:83px"></div>
 
-        <!-- Photo grid -->
-        <div class="row gallery2">
-          <div class="column">
-            <a href="./img/xl/light-1.jpg"><img src="./img/light-1.jpg"></a>
-            <a href="./img/xl/light-5.jpg"><img src="./img/light-5.jpg"></a>
+
+        <div class="gallery2">
+          <div class="row">
+            <div class="column2">
+              <a href="./img/xl/light-1.jpg"><img src="./img/light-1.jpg"></a>
+            </div>
+            <div class="column2">
+              <a href="./img/xl/light-5.jpg"><img src="./img/light-5.jpg"></a>
+            </div>
           </div>
-          <div class="column">
-            <a href="./img/xl/light-2.jpg"><img src="./img/light-2.jpg"></a>
-            <a href="./img/xl/light-6.jpg"><img src="./img/light-6.jpg"></a>
+          <div class="row">
+            <div class="column2">
+              <a href="./img/xl/light-2.jpg"><img src="./img/light-2.jpg"></a>
+            </div>
+            <div class="column2">
+              <a href="./img/xl/light-6.jpg"><img src="./img/light-6.jpg"></a>
+            </div>
           </div>
-          <div class="column">
-            <a href="./img/xl/light-3.jpg"><img src="./img/light-3.jpg"></a>
-            <a href="./img/xl/light-8-underground.jpg"><img src="./img/light-8-underground.jpg"></a>
+          <div class="row">
+            <div class="column2">
+              <a href="./img/xl/light-3.jpg"><img src="./img/light-3.jpg"></a>
+            </div>
+            <div class="column2">
+              <a href="./img/xl/light-8-underground.jpg"><img src="./img/light-8-underground.jpg"></a>
+            </div>
           </div>
-          <div class="column">
-            <a href="./img/xl/light-4.jpg"><img src="./img/light-4.jpg"></a>
-            <a href="./img/xl/light-7.jpg"><img src="./img/light-7.jpg"></a>
+          <div class="row">
+            <div class="column2">
+              <a href="./img/xl/light-4.jpg"><img src="./img/light-4.jpg"></a>
+            </div>
+            <div class="column2">
+              <a href="./img/xl/light-7.jpg"><img src="./img/light-7.jpg"></a>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
 
     <!-- Push down content on small screens -->
     <div class="w3-hide-large" style="margin-top:83px"></div>
-    <hr class="w3-opacity">
+    <hr class="w3-opacity" />
 
     <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32">
       <div class="w3-content w3-justify" style="max-width:600px">
@@ -499,7 +520,7 @@
           </p>
           <!-- Photo grid -->
 
-          <div class="row gallery9">
+          <div class="row gallery10">
             <div class="column2">
               <a href="./img/xl/9-IHM_BI_black.jpg"><img src="./img/9-ihm-bi-black.jpg"></a>
             </div>
@@ -516,7 +537,7 @@
           </p>
           <!-- Photo grid -->
 
-          <div class="row gallery10">
+          <div class="row gallery11">
             <div class="column2">
               <a href="./img/xl/1_geoservices.jpg"><img src="./img/1_geoservices.jpg"></a>
             </div>
@@ -524,7 +545,7 @@
               <a href="./img/xl/2_geoservices.png"><img src="./img/2_geoservices.png"></a>
             </div>
           </div>
-          <div class="row gallery10">
+          <div class="row gallery11">
             <div class="column2">
               <a href="./img/xl/3_geoservices.jpg"><img src="./img/3_geoservices.jpg"></a>
             </div>
@@ -598,7 +619,7 @@
           </p>
           <!-- Photo grid -->
 
-          <div class="row gallery11">
+          <div class="row gallery13">
             <div class="column2">
               <a href="./img/xl/1-mockups.png"><img src="./img/1-mockups.png"></a>
             </div>
@@ -606,7 +627,7 @@
               <a href="./img/xl/2-mockups.png"><img src="./img/2-mockups.png"></a>
             </div>
           </div>
-          <div class="row gallery11">
+          <div class="row gallery13">
             <div class="column2">
               <a href="./img/xl/3-mockups.png"><img src="./img/3-mockups.png"></a>
             </div>
@@ -623,7 +644,7 @@
       <hr class="w3-opacity">
 
       <!-- About section -->
-      <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about"
+      <section class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about"
         style="height: 900px">
         <h2><b>à propos</b></h2>
         <div
@@ -638,7 +659,7 @@
             complexes.
           </p>
         </div>
-      </div>
+      </section>
 
 
       <!-- End page content -->
@@ -649,17 +670,18 @@
 
     <script type="text/javascript">
       var lightbox = new SimpleLightbox('.gallery a', { scrollZoom: false });
-      var lightbox2 = new SimpleLightbox('.gallery2 a', { /* options */ });
-      var lightbox3 = new SimpleLightbox('.gallery3 a', { /* options */ });
-      var lightbox4 = new SimpleLightbox('.gallery4 a', { /* options */ });
-      var lightbox5 = new SimpleLightbox('.gallery5 a', { /* options */ });
-      var lightbox6 = new SimpleLightbox('.gallery6 a', { /* options */ });
-      var lightbox7 = new SimpleLightbox('.gallery7 a', { /* options */ });
-      var lightbox8 = new SimpleLightbox('.gallery8 a', { /* options */ });
-      var lightbox9 = new SimpleLightbox('.gallery9 a', { /* options */ });
-      var lightbox10 = new SimpleLightbox('.gallery10 a', { /* options */ });
-      var lightbox11 = new SimpleLightbox('.gallery11 a', { /* options */ });
-      var lightbox12 = new SimpleLightbox('.gallery12 a', { /* options */ });
+      var lightbox2 = new SimpleLightbox('.gallery2 a', { scrollZoom: false });
+      var lightbox3 = new SimpleLightbox('.gallery3 a', { scrollZoom: false });
+      var lightbox4 = new SimpleLightbox('.gallery4 a', { scrollZoom: false });
+      var lightbox5 = new SimpleLightbox('.gallery5 a', { scrollZoom: false });
+      var lightbox6 = new SimpleLightbox('.gallery6 a', { scrollZoom: false });
+      var lightbox7 = new SimpleLightbox('.gallery7 a', { scrollZoom: false });
+      var lightbox8 = new SimpleLightbox('.gallery8 a', { scrollZoom: false });
+      var lightbox9 = new SimpleLightbox('.gallery9 a', { scrollZoom: false });
+      var lightbox10 = new SimpleLightbox('.gallery10 a', { scrollZoom: false });
+      var lightbox11 = new SimpleLightbox('.gallery11 a', { scrollZoom: false });
+      var lightbox12 = new SimpleLightbox('.gallery12 a', { scrollZoom: false });
+      var lightbox13 = new SimpleLightbox('.gallery13 a', { scrollZoom: false });
     </script>
 
     <script>
@@ -672,7 +694,32 @@
       function w3_close() {
         document.getElementById("mySidebar").style.display = "none";
         document.getElementById("myOverlay").style.display = "none";
+
+        var elementPortfolio = document.getElementById("portfolioMenu");
+        elementPortfolio.classList.toggle("active");
+
+        var elementAbout = document.getElementById("aboutMenu");
+        elementAbout.classList.toggle("active");
       }
+
+      const sections = document.querySelectorAll("section");
+      const navLi = document.querySelectorAll("nav a");
+      window.onscroll = () => {
+        var current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (pageYOffset >= sectionTop - 60) {
+            current = section.getAttribute("id"); }
+        });
+
+        navLi.forEach((a) => {
+          a.classList.remove("active");
+          if (a.classList.contains(current)) {
+            a.classList.add("active");
+          }
+        });
+      };
 
     </script>
 </body>
