@@ -542,7 +542,7 @@ var SimpleLightbox = /*#__PURE__*/function () {
           return _this5.close();
         }
         if (_this5.options.alertError) {
-          alert(_this5.options.alertErrorMessage);
+          console.log(_this5.options.alertErrorMessage);
         }
         _this5.loadImage(dirIsDefined ? direction : 1);
       });
