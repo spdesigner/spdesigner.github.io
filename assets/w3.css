@@ -1127,6 +1127,14 @@ a {
     .w3-auto {
         max-width: 100%
     }
+
+    .w3-container{
+        width: 620px;
+    }
+
+    section {
+        margin-top: 128px;
+    }    
 }
 
 .w3-top,
