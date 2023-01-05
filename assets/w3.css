@@ -1,4 +1,28 @@
 ﻿/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+
+:root {
+    --loading-grey: #ededed;
+}
+
+.loading {
+    background-color: var(--loading-grey);
+    background: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0) 40%,
+      rgba(255, 255, 255, .5) 50%,
+      rgba(255, 255, 255, 0) 60%
+    ) var(--loading-grey);
+    background-size: 200% 100%;
+    background-position-x: 180%;
+    animation: 1s loading ease-in-out infinite;
+  }
+  
+  @keyframes loading {
+    to {
+      background-position-x: -20%;
+    }
+  }
+
 html {
     box-sizing: border-box
 }
@@ -314,21 +338,26 @@ hr {
   }
 
   .column img, .column2 img {
+
+    --position: 45% 45%; 
+
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
     height: 140px;
     object-fit: none;
-    object-position: 50% 50%;
+    object-position: var(--position);
     border-radius: 6px;
     transition: all 0.2s ease-in-out;    
   }
 
   .column img:hover, .column2 img:hover {
+    --positionHover: 45% 45%; 
+
     border: 5px solid #70B5FA;
     border-radius: 6px;
     padding:5px;
-    object-position: 45% 45%;
+    object-position: var(--positionHover);
     transition: all 0.2s ease-in-out;
   }
   
