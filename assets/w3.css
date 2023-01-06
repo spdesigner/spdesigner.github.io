@@ -347,7 +347,8 @@ hr {
     object-fit: none;
     object-position: var(--position);
     border-radius: 6px;
-    transition: all 0.2s ease-in-out;    
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #303b48;
   }
 
   .column img:hover, .column2 img:hover {
@@ -740,7 +741,8 @@ a {
 
 .w3-main,
 #main {
-    transition: margin-left .4s
+    transition: margin-left .4s;
+    background-color: #1e262e;
 }
 
 .w3-modal {
@@ -1889,7 +1891,7 @@ a {
 .w3-dark-gray,
 .w3-hover-dark-gray:hover {
     color: #fff !important;
-    background-color: #12171B !important
+    background-color: #1e262e !important
 }
 
 .w3-pale-red,
