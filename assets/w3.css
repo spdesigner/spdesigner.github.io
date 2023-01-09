@@ -1159,11 +1159,34 @@ a {
     }
 
     .w3-container{
-        width: 620px;
+        width: 100%;
     }
 
     section {
         margin-top: 128px;
+    }    
+}
+
+@media (max-width:620px) {
+    .w3-sidebar.w3-collapse {
+        display: none
+    }
+
+    .w3-main {
+        margin-left: 0 !important;
+        margin-right: 0 !important
+    }
+
+    .w3-auto {
+        max-width: 100%
+    }
+
+    .w3-container{
+        width: 100%;
+    }
+
+    section:last-child {
+        padding-top: 164px !important;
     }    
 }
 
@@ -1708,7 +1731,9 @@ a {
 }
 
 .w3-right {
-    float: right !important
+    float: right !important;
+    position: absolute;
+    right: 26px;    
 }
 
 .w3-button:hover {
