@@ -56,6 +56,11 @@
       transform: translateZ(0px);
       border: 1px solid #303b48;
     }
+
+    header {
+      border-bottom: 1px solid rgb(48, 59, 72); 
+    }
+
   </style>
   <link type="text/css" rel="stylesheet" href="./assets/simple-lightbox.css" />
 </head>
@@ -108,8 +113,10 @@
 
   <!-- Top menu on small screens -->
   <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-    <span class="w3-left w3-padding">sylvain pourquier <br /><small>product designer</small><br />
-      <p class="w3-wide">#design/dev/dataviz for better ux</p>
+    <span class="w3-left w3-padding">sylvain pourquier 
+      <span class="stickyHidden"><br /><small>product designer</small><br />
+        <p class="w3-wide">#design/dev/dataviz for better ux</p>
+      </span>
     </span>
     <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
   </header>
@@ -997,7 +1004,18 @@
         const hrs = document.querySelectorAll("hr");
         const navYear = document.querySelectorAll("ul li");
 
+        const stickyMenu = document.getElementsByClassName("stickyHidden");
+
         window.onscroll = () => {
+
+          console.log(pageYOffset);
+
+          if(pageYOffset > 10 ){
+            stickyMenu[0].style.display = "none";
+          }
+          else{
+            stickyMenu[0].style.display = "";
+          }
 
           var currentMenu = "";
 
