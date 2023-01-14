@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Sylvain POURQUIER - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex">
+  <meta name="robots" content="noindex, nofollow">
 
   <link rel="stylesheet" href="./assets/w3.css">
   <link rel="stylesheet" href="./assets/css.css">
@@ -289,6 +289,96 @@
                     att="editor"></a>
               </div>
             </div>
+          </div>
+        </div>
+
+
+      <!-- Push down content on small screens -->
+      <div class="w3-hide-large" style="margin-top:83px"></div>
+      <hr class="w3-opacity" id="2020-2022">
+
+      <div class="w3-container w3-dark-grey w3-text-light-grey w3-padding-32">
+        <div class="w3-content" style="max-width:600px">
+          <p>
+          <h4>Geo Graph</h4>
+          <p class="w3-wide">#concept/design/prototype/<br />2020-2022 - Concept proposé au sein de l'incubateur, Utiliser la représentation en graphe pour créer des applications</p>
+
+          </p>
+
+          <!-- Photo grid -->
+          <div class="gallery18">
+            <div class="row">
+              <div class="column">
+                <a href="./img/geograph/geograph-1.png"><img src="./img/geograph-1.png" att="geograph"></a>
+              </div>
+              <div class="column">
+                <a href="./img/geograph/geograph-2.png"><img src="./img/geograph-2.png" att="geograph"></a>
+              </div>
+              <div class="column">
+                <a href="./img/geograph/geograph-3.png"><img src="./img/geograph-3.png" att="geograph2"></a>
+              </div>
+              <div class="column">
+                <a href="./img/geograph/geograph-4.png"><img src="./img/geograph-4.png" att="geograph2"></a>
+              </div>
+            </div>              
+          </div>
+        </div>
+
+
+      <!-- Push down content on small screens -->
+      <div class="w3-hide-large" style="margin-top:83px"></div>
+      <hr class="w3-opacity" id="2020-2022">
+
+      <div class="w3-container w3-dark-grey w3-text-light-grey w3-padding-32">
+        <div class="w3-content" style="max-width:600px">
+          <p>
+          <h4>Plateforme ​GEO Key collaborative</h4>
+          <p class="w3-wide">#concept/design/prototype/<br />2020-2022 - Concept proposé au sein de l'incubateur, cartes et dashboards collaboratifs (figma like)</p>
+
+          </p>
+
+          <!-- Photo grid -->
+          <div class="gallery17">
+            <div class="row">
+              <div class="column2">
+                <a href="./img/geokey/geokey-1.png"><img src="./img/geokey-1.png" att="geokey"></a>
+              </div>
+              <div class="column2">
+                <a href="./img/geokey/geokey-2.png"><img src="./img/geokey-2.png" att="geokey"></a>
+              </div>              
+            </div>
+            <div class="row">
+              <div class="column2">
+                <a href="./img/geokey/geokey-3.png"><img src="./img/geokey-3.png" att="geokey"></a>
+              </div>
+              <div class="column2">
+                <a href="./img/geokey/geokey-4.png"><img src="./img/geokey-4.png" att="geokey"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column2">
+                <a href="./img/geokey/geokey-5.png"><img src="./img/geokey-5.png" att="geokey"></a>
+              </div>
+              <div class="column2">
+                <a href="./img/geokey/geokey-6.png"><img src="./img/geokey-6.png" att="geokey"></a>
+              </div>
+            </div> 
+            <div class="row">
+              <div class="column2">
+                <a href="./img/geokey/geokey-7.png"><img src="./img/geokey-7.png" att="geokey2"></a>
+              </div>
+              <div class="column2">
+                <a href="./img/geokey/geokey-8.png"><img src="./img/geokey-8.png" att="geokey3"></a>
+              </div>
+            </div>   
+            <div class="row">
+              <div class="column2">
+                <a href="./img/geokey/geokey-9.png"><img src="./img/geokey-9.png" att="geokey"></a>
+              </div>
+              <div class="column2">
+                <a href="./img/geokey/geokey-10.png"><img src="./img/geokey-10.png" att="geokey"></a>
+              </div>
+            </div>             
           </div>
         </div>
 
@@ -921,6 +1011,8 @@
         var lightbox14 = new SimpleLightbox('.gallery14 a', { scrollZoom: false });
         var lightbox15 = new SimpleLightbox('.gallery15 a', { scrollZoom: false });
         var lightbox16 = new SimpleLightbox('.gallery16 a', { scrollZoom: false });
+        var lightbox17 = new SimpleLightbox('.gallery17 a', { scrollZoom: false });
+        var lightbox18 = new SimpleLightbox('.gallery18 a', { scrollZoom: false });
       </script>
 
       <script>
@@ -978,6 +1070,26 @@
             positionX = Math.floor(Math.random() * 60);
             positionY = Math.floor(Math.random() * 40);
           }
+          else if (image.getAttribute("att") == "geograph") {
+            positionX = 30;
+            positionY = 50;
+          } 
+          else if (image.getAttribute("att") == "geograph2") {
+            positionX = 10;
+            positionY = 10;
+          }           
+          else if (image.getAttribute("att") == "geokey") {
+            positionX = Math.floor(Math.random() * 50);
+            positionY = Math.floor(Math.random() * 50);
+          }
+          else if (image.getAttribute("att") == "geokey2") {
+            positionX = 50;
+            positionY = 5;
+          }
+          else if (image.getAttribute("att") == "geokey3") {
+            positionX = 60;
+            positionY = 15;
+          }                                           
           else {
             //positionX = 45;
             //positionY = 45;
