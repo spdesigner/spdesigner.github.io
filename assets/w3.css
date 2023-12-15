@@ -355,7 +355,7 @@ hr {
   .column img:hover, .column2 img:hover {
     --positionHover: 45% 45%; 
 
-    border: 5px solid #70B5FA;
+    border: 5px solid #5551ff;
     border-radius: 6px;
     padding:5px;
     object-position: var(--positionHover);
@@ -743,7 +743,7 @@ a {
 .w3-main,
 #main {
     transition: margin-left .4s;
-    background-color: #1e262e;
+    background-color: #fff;
 }
 
 .w3-modal {
@@ -1027,7 +1027,7 @@ a {
 
 .w3-content {
     max-width: 980px;
-    /*border-left: 1px solid #70B5FA;*/
+    /*border-left: 1px solid #5551ff;*/
     /*padding-left: 10px;*/
 }
 
@@ -1738,12 +1738,12 @@ a {
 }
 
 .w3-button:hover {
-    color: #70B5FA !important;
-    background-color: #303B48!important
+    color: #5551ff !important;
+    background-color: #e7f1f9!important
 }
 
 .w3-button:hover svg {
-    fill: #70B5FA !important;
+    fill: #5551ff !important;
 }
 
 .w3-transparent,
@@ -1886,8 +1886,8 @@ a {
 
 .w3-white,
 .w3-hover-white:hover {
-    color: #D1D8E0 !important;
-    background-color: #1E262E !important
+    color: #12171B !important;
+    background-color: #fff !important
 }
 
 .w3-black,
@@ -1908,8 +1908,8 @@ a {
 .w3-hover-light-grey:hover,
 .w3-light-gray,
 .w3-hover-light-gray:hover {
-    color: #000 !important;
-    background-color: #12171B !important
+    color: #12171B !important;
+    background-color: #e7f1f9 !important
 }
 
 .w3-dark-grey,
